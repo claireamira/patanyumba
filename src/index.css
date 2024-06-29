@@ -72,3 +72,16 @@ button:focus-visible {
 .houseContainer{
   margin-top: 10px;
 }
+
+.favoritebutton{
+  margin-left: 20px;
+}
+
+.favoritecount{
+  background-color: lightgray;
+  width: 15%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 100px;
+}
+
