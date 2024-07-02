@@ -6,6 +6,7 @@ import house33 from "../assets/house3.jpg"
 import house44 from "../assets/house4.jpg"
 import house55 from "../assets/house5.jpg"
 import house66 from "../assets/house6.jpg"
+import Navbar from "./Navbar";
 
 const Cardcontainer = () =>{
     let house1= {
@@ -48,6 +49,7 @@ const Cardcontainer = () =>{
 
     return(
         <>
+        <Navbar/>
         <div className="container houseContainer">
             <div className="row align-items-start">
                 <div className="col-md-4">
