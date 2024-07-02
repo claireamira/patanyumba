@@ -110,7 +110,6 @@ button:focus-visible {
 
 .navbar-brand:hover, .nav-link:hover{
   background-color: rgb(196, 251, 255);
-  padding: 5px;
   border-radius: 10px;
 }
 
