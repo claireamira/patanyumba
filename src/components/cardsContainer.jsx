@@ -9,42 +9,51 @@ import house66 from "../assets/house6.jpg"
 import Navbar from "./Navbar";
 
 const Cardcontainer = () =>{
-    let house1= {
-        image:house11,
-        housename:"Mansion",
-        location: "Nairobi" 
-    }
+    // let house1= {
+    //     image:house11,
+    //     housename:"Mansion",
+    //     location: "Nairobi" 
+    // }
 
-    let house2= {
-        image:house22,
-        housename:"Modarn Villa",
-        location: "Naivasha"
-    }
+    // let house2= {
+    //     image:house22,
+    //     housename:"Modarn Villa",
+    //     location: "Naivasha"
+    // }
 
-    let house3= {
-        image:house33,
-        housename:"5 Bedroom",
-        location: "Nakuru"
-    }
+    // let house3= {
+    //     image:house33,
+    //     housename:"5 Bedroom",
+    //     location: "Nakuru"
+    // }
 
-    let house4= {
-        image:house44,
-        housename:"6 Bedroom",
-        location: "Kisumu"
-    }
+    // let house4= {
+    //     image:house44,
+    //     housename:"6 Bedroom",
+    //     location: "Kisumu"
+    // }
 
-    let house5= {
-        image:house55,
-        housename:"4 Bedroom",
-        location: "Mombasa"
-    }
+    // let house5= {
+    //     image:house55,
+    //     housename:"4 Bedroom",
+    //     location: "Mombasa"
+    // }
 
-    let house6= {
-        image:house66,
-        housename:"7 Bedroom",
-        location: "Turkana"
-    }
+    // let house6= {
+    //     image:house66,
+    //     housename:"7 Bedroom",
+    //     location: "Turkana"
+    // }
 
+     // Create an array of house objects
+    const houses = [
+        { image: house11, housename: "Mansion", location: "Nairobi" },
+        { image: house22, housename: "Modern Villa", location: "Naivasha" },
+        { image: house33, housename: "5 Bedroom", location: "Nakuru" },
+        { image: house44, housename: "6 Bedroom", location: "Kisumu" },
+        { image: house55, housename: "4 Bedroom", location: "Mombasa" },
+        { image: house66, housename: "7 Bedroom", location: "Turkana" }
+    ];
     
 
     return(
@@ -52,7 +61,7 @@ const Cardcontainer = () =>{
         <Navbar/>
         <div className="container houseContainer">
             <div className="row align-items-start">
-                <div className="col-md-4">
+                {/* <div className="col-md-4">
                     <Housecard 
                     house={house1}
                     />
@@ -81,7 +90,15 @@ const Cardcontainer = () =>{
                     <Housecard 
                     house={house6}
                     />
-                </div>
+                </div> */}
+
+                {/*iterate over the houses array and render a Housecard for each house.
+                    */}
+                    {houses.map((house, i) => (
+                        <div className="col-md-4" key={i}>
+                            <Housecard house={house} />
+                        </div>
+                    ))}
             </div>
         </div>
         
