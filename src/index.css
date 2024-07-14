@@ -100,7 +100,7 @@ button:focus-visible {
   align-items: center;
 }
 .carousel-item img {
-  height: 400px;
+  height: 100%;
   object-fit: cover;
 }
 

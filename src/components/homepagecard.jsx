@@ -29,7 +29,7 @@ return(
                 </button>
             </div>
         </div>
-        <div className="footer bg-light p-4">
+        {/* <div className="footer bg-light p-4">
         <div className="container">
           <div className="row">
             <div className="col-md-6 mb-3">
@@ -88,7 +88,7 @@ return(
         <div className="bg-light text-center py-3">
           <span className="text-muted">&copy; 2024 Your Company. All rights reserved.</span>
         </div>
-      </div>
+      </div> */}
     </>
 )
 }
